@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users List</h1>
+    <br>
+    <a href="/"><button>Add User</button></a>
+    <br><br>
+    <table border="1">
+        <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>AGE</th>
+        <th>DOB</th>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                {% for b in i %}
+                <td>{{b}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
